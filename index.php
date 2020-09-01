@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Academy 2020</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+    </style>
 </head>
 <body>
     <div class="grid-container">
@@ -12,14 +17,27 @@
             <div class="large-12 small-12 columns">
                 <div class="callout">
                     <div class="top-bar">
-                        <div class="top-bar-left">
-                            <ul class="dropdown menu" data-dropdown-menu>
-                            <li class="menu-text">PHP Academy Homework 1</li>
-                            <li><a href="#">One</a></li>
-                            <li><a href="#">Two</a></li>
-                            <li><a href="#">Three</a></li>
-                            </ul>
-                        </div>
+                        <ul class="dropdown menu" data-dropdown-menu>
+                        <li class="menu-text">PHP Academy Homework 1</li>
+                        <li><a href="<?= $_SERVER['PHP_SELF'] ?>">Home</a></li>
+                        <li><a href="/table.php">Table</a></li>
+                        <li><a href="#">Third</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                    <section><span><p><h4><b><i><strong>Variables</strong></i></b></h4></p></span></section>
+                        <?php 
+                            include 'variables.php';
+                            echo 'x = ' . $x . '<br>';
+                            echo 'y = ' . $y . '<hr>';
+
+                            echo 'x + y = ' . ($x + $y) . '<br>';
+                            echo 'x - y = ' . ($x - $y) . '<br>';
+                            echo 'x * y = ' . $x * $y . '<br>';
+                            echo 'x / y = ' . $x / $y . '<br>';
+                            echo 'x % y = ' . $x % $y . '<br>';
+                            echo 'x ^ y = ' . $x ** $y. '<hr>';
+                        ?>
                     </div>
                 </div>
             </div>
