@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
     <style>
         body {
-            background-color: lightblue;
+            background-color: lightcoral;
         }
     </style>
 </head>
@@ -17,15 +17,15 @@
             <div class="large-12 small-12 columns">
                 <div class="callout">
                     <div class="top-bar">
+                    <?php include 'variables.php'; ?>
                         <ul class="dropdown menu" data-dropdown-menu>
-                        <li class="menu-text">PHP Academy Homework 1</li>
+                        <li class="menu-text"><?= $appName ?></li>
                         <li><a href="/index.php">Home</a></li>
+                        <li><a href="/operators.php">Operators</a></li>
                         <li><a href="<?= $_SERVER['PHP_SELF'] ?>">Table</a></li>
-                        <li><a href="#">Third</a></li>
                         </ul>
                     </div>
                     <div class="container">
-                        <?php include 'variables.php'; ?>
                         <table>
                         <caption><?= $caption ?></caption>
                             <thead>
@@ -52,6 +52,7 @@
             </div>
         </div>
     </div>
+    <?php require_once 'footer.php'; ?>
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
