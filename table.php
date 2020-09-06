@@ -20,8 +20,8 @@
                     <?php include 'variables.php'; ?>
                         <ul class="dropdown menu" data-dropdown-menu>
                         <li class="menu-text"><?= $appName ?></li>
-                        <li><a href="/index.php">Home</a></li>
-                        <li><a href="/operators.php">Operators</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="operators.php">Operators</a></li>
                         <li><a href="<?= $_SERVER['PHP_SELF'] ?>">Table</a></li>
                         </ul>
                     </div>
@@ -60,15 +60,3 @@
     <script src="js/app.js"></script>
 </body>
 </html>
-
-
-
-<!-- 
-<table></table>
-<img src="" alt="">
-<select name="" id="">
-    <option value=""></option>
-</select>
-<span></span>
-<section></section>
-<style></style> -->

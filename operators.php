@@ -20,28 +20,33 @@
                     <?php include 'variables.php'; ?>
                         <ul class="dropdown menu" data-dropdown-menu>
                         <li class="menu-text"><?= $appName ?></li>
-                        <li><a href="/index.php">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="<?= $_SERVER['PHP_SELF'] ?>">Operators</a></li>
-                        <li><a href="/table.php">Table</a></li>
+                        <li><a href="table.php">Table</a></li>
                         </ul>
                     </div>
                     <div class="container">
-                    <section><span><p><h4><i><strong>Variables</strong></i></h4></p></span></section>
+                        <h4><strong>Variables</strong></h4>
+                        <span>
                         <?php 
                             echo 'x = ' . $x . '<br>';
-                            echo 'y = ' . $y . '<hr>';
+                            echo 'y = ' . $y;
                         ?>
-                        <h4><b><i>Operators</i></b></h4>
+                        </span><hr>
+                        <h4><strong>Operators</strong></h4>
+                        <span>
                         <?php
                             echo 'x + y = ' . ($x + $y) . '<br>';
                             echo 'x - y = ' . ($x - $y) . '<br>';
                             echo 'x * y = ' . $x * $y . '<br>';
                             echo 'x / y = ' . $x / $y . '<br>';
                             echo 'x % y = ' . $x % $y . '<br>';
-                            echo 'x ^ y = ' . $x ** $y. '<hr>';
+                            echo 'x ^ y = ' . $x ** $y;
                         ?>
-                        <h5><b><i>Comparison Operators</i></b></h5>
-                        <?php 
+                        </span><hr>
+                        <h4><strong>Comparison Operators</strong></h4>
+                        <span>
+                        <?php
                             if ($x < $y) {
                                 echo $x . ' is greater than ' . $y . '<br>';
                             } elseif ($x > $y) {
@@ -56,6 +61,7 @@
                                 echo $x . ' is egual ' . $y . '<br>';
                             }
                         ?>
+                        </span>
                     </div>
                 </div>
             </div>

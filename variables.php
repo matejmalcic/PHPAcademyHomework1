@@ -10,4 +10,3 @@
     $image = 'https://inchoo.hr/wp-content/uploads/2018/11/php-akademija_744x294_inchoo-hr-blog-logoi-5.png';
 
     $appName = 'PHP Academy Homework 1';
-?>

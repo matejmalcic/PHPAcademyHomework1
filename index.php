@@ -21,24 +21,24 @@
                         <ul class="dropdown menu" data-dropdown-menu>
                         <li class="menu-text"><?= $appName ?></li>
                         <li><a href="<?= $_SERVER['PHP_SELF'] ?>">Home</a></li>
-                        <li><a href="/operators.php">Operators</a></li>
-                        <li><a href="/table.php">Table</a></li>
+                        <li><a href="operators.php">Operators</a></li>
+                        <li><a href="table.php">Table</a></li>
                         </ul>
                     </div>
                     <div class="container">
                         <img style="width: 100%;" src="<?= $image ?>" alt="image">
                         <hr>
                         <h1>Text Formatting</h1> 
-                        <b> Bold text < b ></b> <br>
-                        <strong> Important text < strong ></strong><br>
-                        <i> Italic text < i ></i><br>
-                        <em> Emphasized text < em ></em><br>
-                        <mark> Marked text < mark ></mark><br>
-                        <small> Smaller text < small ></small><br>
-                        <del> Deleted text < del ></del><br>
-                        <ins> Inserted text < ins ></ins><br>
-                        <sub> Subscript text < sub ></sub><br>
-                        <sup> Superscript text < sup ></sup>
+                        <b> Bold text </b> <br>
+                        <strong> Important text </strong><br>
+                        <i> Italic text </i><br>
+                        <em> Emphasized text </em><br>
+                        <mark> Marked text k </mark><br>
+                        <small> Smaller text </small><br>
+                        <del> Deleted text </del><br>
+                        <ins> Inserted text </ins><br>
+                        <sub> Subscript text </sub><br>
+                        <sup> Superscript text </sup>
                     </div>
                 </div>
             </div>
